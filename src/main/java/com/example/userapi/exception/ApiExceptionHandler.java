@@ -51,7 +51,7 @@ public class ApiExceptionHandler {
   public ResponseEntity<ApiError> notFound(IllegalArgumentException ex) {
     return build(HttpStatus.NOT_FOUND, ex.getMessage());
   }
-  
+
   /* 共通ビルダー */
   public ResponseEntity<ApiError> build(HttpStatus status, String message) {
     return ResponseEntity.status(status)

@@ -3,7 +3,7 @@ package com.example.userapi.dto;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
-public record UserRequest (
+public record UserRequest(
 
   @Email(message = "メール形式が正しくありません")
   @NotBlank(message = "メールアドレスは必須です")

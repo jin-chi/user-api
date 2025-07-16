@@ -69,9 +69,16 @@
       <artifactId>mysql-connector-j</artifactId>
       <version>9.3.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/me.paulschwarz/spring-dotenv -->
+    <dependency>
+      <groupId>me.paulschwarz</groupId>
+      <artifactId>spring-dotenv</artifactId>
+      <version>4.0.0</version>
+    </dependency>
   </dependencies>
 
   <build>
+    <finalName>user-api</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
